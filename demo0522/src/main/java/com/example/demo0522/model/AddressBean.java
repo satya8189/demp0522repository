@@ -20,6 +20,7 @@ public class AddressBean {
 	public String getSecondaryAddress() {
 		return secondaryAddress;
 	}
+
 	public void setSecondaryAddress(String secondaryAddress) {
 		this.secondaryAddress = secondaryAddress;
 	}
