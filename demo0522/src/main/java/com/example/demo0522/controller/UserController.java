@@ -70,5 +70,14 @@ public class UserController {
 		u.setStatus("delete successfull");
 		return u;
 	}
-	
+
+	@DeleteMapping("/delePerson/{userId}")
+	public UserBean delePerson(@PathVariable Long userId) {
+		userService.deleteUser(userId);
+		UserBean u=new UserBean();
+		u.setStatus("delete successfull");
+		return u;
+	}
+
+
 }
